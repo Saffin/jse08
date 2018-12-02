@@ -1,0 +1,31 @@
+Účel XML i JSON je přenášet data a my bychom si v tomto cvičení měli procvičit, jak data můžeme parsovat a zapisovat.
+Ve všech případech se bude používat world.xml, resp. world.json, jež jsou umístěné v resource. Obsahují obecné informace o naší planetě:-)
+Soubory world.xml a world.json obsahují stejná data, JSON vznikl z XML konvertem do JSON formátu.
+Pro world.xml existuje i předpis world.xsd.
+
+Práce s XML:
+ výstupy v xml musí být validní dle xsd. Výstupní xsd soubory najdete v resources/output_xsd.
+ 
+1) Načtete xml pomocí SAX a vypište do xml:
+    a) odpovídajícímu mountains.xsd -  všechny pohoří s jejich výškou.
+    b) odpovídajícímu seas.xsd - název moře, které sousedí s Indií.
+    c) odpovídajícímu borders.xsd - 7 nejdelších hranic a mezi jakými státy je tato hranice.
+
+2) Načtete xml pomocí DOM a vypište do konsole
+    a) odpovídajícímu rivers.xsd - 10 nejdelších řek s jejich délkou.
+    b) odpovídajícímu cities.xsd - všechna města se státem, které mají více než 10 milionů obyvatel.
+    c) odpovídajícímu countries.xsd - členské státy organizace "Food and Agriculture Organization"
+
+3) Načtete xml pomocí JAXB a vypište do xml
+    a) odpovídajícímu islands.xsd - 5 největších ostrovů s názvem
+    b) odpovídajícímu cities.xsd - města ve Švýcarsku s počtem obyvatel, pokud je uveden.
+    c) odpovídajícímu seasWtihRivers.xsd - moře, kterých ustí alespoň 30 řek, s názvy řek.
+
+Práce s JSON
+Načtete json a vypište do json (formát výstupního json je stejný jako pro odpovídající úlohu z xml):
+    a) všechny pohoří s jejich výškou.
+    b) název moře, které sousedí s Indií.
+    c) 7 nejdelších hranic a mezi jakými státy je tato hranice.
+    d) 10 nejdelších řek s jejich délkou.
+    e) všechna města, které mají více než 10 milionů obyvatel.
+    f) členské státy organizace "Food and Agriculture Organization"
